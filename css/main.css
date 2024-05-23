@@ -1,3 +1,5 @@
+/*Online Card*/
+
 @font-face {
     font-family: 'Sueltaa';
     src: url(../fonts/sueltaa-sueltaa.ttf);
@@ -13,7 +15,7 @@
     --heart-color: #9470CE;
 }
 
-body {
+.online-card {
     margin: 70px;
     padding: 0;
     box-sizing: border-box;
@@ -206,5 +208,35 @@ body {
     transform: rotate(90deg);
     transition-delay: 0.4s;
 }
+
+
+/*Whole website*/
+body {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+/*Header*/
+
+header {
+    background-image: url(../images/header-picture.png);
+    font-family: 'Poppins', sans-serif;
+    padding: 35px;
+}
+
+.date {
+    color: white;
+    float: right;
+    margin-right: -20px;
+}
+
+
+section {
+    background-image: url(../images/background-paper.png);
+}
+
 
 
