@@ -14,7 +14,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 70px;
     padding: 0;
     box-sizing: border-box;
     background-image: url(../images/background.png);
@@ -74,7 +74,7 @@ body {
     position: absolute;
     right: 10%;
     bottom: 0;
-    width: 66%;
+    width: 60%;
     height: 80%;
     background: var(--primary);
     transition: all 1s ease-in-out;
@@ -85,12 +85,32 @@ body {
 }
 
 
-.letter > .text {
+.letter > .text  {
     font-family: 'Sueltaa';
-    font-size: 30px;
+    font-size: 10px;
+    color: var(--txt-color);
+    text-align: center;
+    transition: font-size 2.8s ease-in-out;
+}
+
+.main-text {
+    margin-top: -30px;
+    padding-left: 45px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.flap > .envelope .letter .text {
+    font-family: 'Sueltaa';
+    font-size: 20px;
     color: var(--txt-color);
     text-align: center;
 }
+
+.open {
+    font-size: 30px;
+}
+
 
 .surprise {
     font-size: 55px;
@@ -108,22 +128,31 @@ body {
 }
 
 .sticker-buttons {
-    font-family: lint-mccree, sans-serif;
-    margin-top: -45px;
+    font-family: 'Sueltaa';
+    margin-top: -70px;
+    position: relative;
+    z-index: 0; 
 }
 
 .sticker-buttons ul li {
-    display: inline;
-    margin-right: 18px;
-
+    display: inline-block;
+    margin-right: 15px;
 }
 
-.sticker-buttons ul li a{
+.sticker-buttons ul li a {
     text-decoration: none;
     list-style-type: none;
     color: var(--txt-color);
+    position: relative;
+    display: block; 
 }
 
+.sticker-buttons ul li a svg {
+    width: 75px;
+    height: 75px;
+    display: inline-block;
+    z-index: 5; 
+}
 
 
 
@@ -164,10 +193,13 @@ body {
     transform: rotateX(180deg);
 }
 
+
+
 .flap > .envelope .letter {
-    bottom: 100px;
+    bottom: 70px;
     transform: scale(1.2) rotate(-10deg);
     transition-delay: 1s;
+    height: 120%;
 }
 
 .flap > .heart {
